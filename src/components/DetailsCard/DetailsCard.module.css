@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@600&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark-blue: #0F1730;
+  --dark-gray: #AAB7DD;
+  --gray: #E7EAF5;
+  --light-gray: #FBFCFF;
+  --turquase: #11B3E5;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray);
+}
+
+.card {
+  width: 577px;
+  background: var(--white);
+  border-radius: 40px;
+  padding: 50px;
+  box-shadow: 0 25px 30px -19px rgba(18, 56, 68, .21);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.overview {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.overview .thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 135px;
+  border-radius: 25px;
+  background: var(--dark-gray);
+}
+
+.thumbnail img {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.overviewText h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 26px;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.overviewText p {
+  font-family: 'Mulish', serif;
+  font-size: 18px;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.overviewText span {
+  font-family: 'Mulish', serif;
+  font-size: 14px;
+  background: var(--turquase);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.ratings {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 40px;
+  background: var(--light-gray);
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+}
+
+.ratings .ratingSingle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingSingle .ratingText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratingSingle .number {
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+}
+
+.ratingSingle img {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.ratingSingle span {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.buttons button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  flex: 1;
+  padding: 25px;
+}
+
+.buttons .viewPostBtn {
+  color: var(--white);
+  background: var(--dark-blue);
+}
+
+.buttons .viewDashboardBtn {
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-gray);
+}

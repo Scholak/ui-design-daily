@@ -4,3 +4,4 @@ This repo includes components from https://uidesigndaily.com/ using react and cs
 
 ## Component List
 1. Product Info UI Design (https://scholak-ui-design-daily.vercel.app/product-info-ui-design)
+1. Details Card (https://scholak-ui-design-daily.vercel.app/details-card)
