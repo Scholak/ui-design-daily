@@ -8,22 +8,29 @@ const index = () => {
   return (
 		<>
 			<p className='project-description'>
-				access figma file from {' '}
-				<a href='https://uidesigndaily.com/posts/figma-product-info-ui-design-card-day-1575' target='_blank'>here</a>
+				access figma file from{' '}
+				<a
+					href='https://uidesigndaily.com/posts/figma-product-info-ui-design-card-day-1575'
+					target='_blank'
+				>
+					here
+				</a>
 			</p>
 			<div className={styles.wrapper}>
 				<div className={styles.card}>
 					<div className={styles.cardImg}>
 						<img src={productImg} alt='product image' />
 					</div>
-					<div>
-						<div className={styles.badgets}>
-							<p>Free shipping</p>
+					<div className={styles.cardContent}>
+						<div>
+							<div className={styles.badgets}>
+								<p>Free shipping</p>
+							</div>
+							<h1 className={styles.productName}>
+								Razer Kraken Kitty Edt Gaming Headset Quartz
+							</h1>
 						</div>
-						<h1 className={styles.productName}>
-							Razer Kraken Kitty Edt Gaming Headset Quartz
-						</h1>
-						<div className={styles.price}>
+						<div>
 							<p className={styles.oldPrice}>1 599,-</p>
 							<p className={styles.newPrice}>799,-</p>
 							<p className={styles.availableDate}>
@@ -31,9 +38,9 @@ const index = () => {
 							</p>
 						</div>
 						<button className={styles.addToCartBtn}>Add to cart</button>
-						<div className={styles.stock}>
+						<div>
 							<span className={styles.circle}></span>
-							<span className={styles.stockText}>50+ pcs. in stock.</span>
+							<span className={styles.stock}>50+ pcs. in stock.</span>
 						</div>
 						<div className={styles.buttons}>
 							<button>
