@@ -11,7 +11,7 @@ const index = () => {
 			<p className='project-description'>
 				access figma file from{' '}
 				<a
-					href='https://uidesigndaily.com/posts/figma-buy-subscription-section-pricing-card-day-1574'
+					href='https://uidesigndaily.com/posts/figma-details-card-day-1469'
 					target='_blank'
 				>
 					here
