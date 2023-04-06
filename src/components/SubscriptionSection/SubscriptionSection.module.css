@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+  --dark-blue: #171435;
+  --white: #FFFFFF;
+  --off-white: #FFFBEC;
+  --cream: #F9ECFF;
+  --color-bg: #F4F5FA;
+  --gray-one: #F0F0F6;
+  --gray-two: #ECEEFF;
+  --gray-three: #F1F1F6;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-three);
+}
+
+section {
+  width: 1308px;
+  padding: 80px;
+  border-radius: 23px;
+  background: var(--color-bg);
+  box-shadow: 0 47px 57px -26px rgba(83, 83, 144, .14);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.sectionTitle, .sectionSubTitle {
+  text-align: center;
+  color: var(--dark-blue)
+}
+
+.sectionTitle {
+  width: 579px;
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.sectionSubTitle {
+  width: 713px;
+  font-weight: 500;
+  margin-bottom: 56px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+  margin-bottom: 56px;
+  transform: translateX(12px);
+}
+
+.plan {
+  position: relative;
+  padding: 40px;
+  background: var(--white);
+  color: var(--dark-blue);
+  border-radius: 14px;
+}
+
+
+.plan:first-child {
+  box-shadow: -24px -24px var(--off-white);
+}
+
+.plan:nth-child(2) {
+  box-shadow: -24px -24px var(--cream);
+}
+
+.plan:last-child {
+  box-shadow: -24px -24px var(--gray-two);
+}
+
+.plan img {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.plan .name {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.plan .feature {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.plan .price {
+  margin-bottom: 40px;
+}
+
+.plan .amount {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.plan .month {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.plan .btn {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  padding: 16px 24px;
+  border-radius: 41px;
+  border: 1px solid var(--gray-one);
+  background: var(--color-bg);
+  box-shadow: 0 4px rgba(231, 231, 251, 1);
+}
+
+.cta {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  background: var(--dark-blue);
+  color: var(--white);
+  border-radius: 41px;
+}
