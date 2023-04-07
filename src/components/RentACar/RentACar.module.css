@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@700&display=swap');
+
+:root {
+  --dark-blue: #0D1C52;
+  --grayish-blue: #8F9DCE;
+  --yellow: #FCC863;
+  --red: #FE6F4F;
+  --orange: #FC9A63;
+  --white: #FFFFFF;
+  --off-white: #F5F3E6;
+}
+
+::placeholder {
+  color: var(--dark-blue);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--off-white);
+}
+
+.card {
+  position: relative;
+}
+
+.card .shapeYellow {
+  position: absolute;
+  top: -109px;
+  left: -109px;
+  width: 484px;
+  height: 632px;
+  background: var(--yellow);
+  border-radius: 90px;
+}
+
+.card .shapeOrange {
+  position: absolute;
+  bottom: -78px;
+  right: -175px;
+  width: 300px;
+  height: 408px;
+  background: var(--orange);
+  border-radius: 90px;
+}
+
+.card .content {
+  position: relative;
+  z-index: 1;
+  width: 756px;
+  padding: 56px;
+  border-radius: 32px;
+  background: var(--white);
+  font-family: 'Mulish', sans-serif;
+  color: var(--dark-blue);
+  box-shadow: 0 44px 64px rgba(69, 25, 160, .1);
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.location {
+  margin-bottom: 14px;
+}
+
+.location label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.location input {
+  all: unset;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid var(--grayish-blue);
+}
+
+.checkboxArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.checkboxArea input {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid var(--grayish-blue);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.row label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.datePicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.inlineRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.inlineRow .datePicker {
+  margin-bottom: 0;
+}
+
+.datePicker span {
+  flex: 1;
+}
+
+.features {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.features li {
+  margin-bottom: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.features li:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 22px;
+  color: var(--white);
+  background: var(--red);
+  text-align: center;
+  font-size: 24px;
+}
