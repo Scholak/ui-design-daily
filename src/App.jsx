@@ -5,6 +5,7 @@ const ProductInfo = React.lazy(() => import('./components/ProductInfo'))
 const DetailsCard = React.lazy(() => import('./components/DetailsCard'))
 const SubscriptionSection = React.lazy(() => import('./components/SubscriptionSection'))
 const RentACar = React.lazy(() => import('./components/RentACar'))
+const BillingPage = React.lazy(() => import('./components/BillingPage'))
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
 					<Route path='/details-card' element={<DetailsCard />} />
 					<Route path='/subscription-section' element={<SubscriptionSection />} />
 					<Route path='/rent-a-car-ui-design-card-search' element={<RentACar />} />
+					<Route path='/billing-page' element={<BillingPage />} />
 				</Routes>
 			</BrowserRouter>
 		</Suspense>

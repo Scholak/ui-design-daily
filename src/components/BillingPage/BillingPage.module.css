@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --dark-blue: #1A194D;
+  --red: #EE4D38;
+  --light-red: #EE4D38;
+  --light-purple: #62618F;
+  --white: #FFFFFF;
+  --off-white: #F8F8FF;
+  --gray: #CBCBD9;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  background: var(--off-white);
+}
+
+.profile {
+  display: flex;
+  gap: 14px;
+  margin-top: 44px;
+  margin-left: 44px;
+  margin-bottom: 57px;
+}
+
+.profileText p {
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profileText span {
+  color: var(--light-purple);
+  font-size: 14px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  list-style: none;
+  padding: 16px;
+}
+
+ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  padding-left: 16px;
+  color: var(--light-purple);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all .3s;
+}
+
+ul li:last-child {
+  margin-top: auto;
+}
+
+li.active a, li:hover a {
+  color: var(--dark-blue);
+}
+
+li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 24px;
+  transition: all .3s;
+}
+
+li.active a:before, li:hover a:before {
+  background: var(--light-red);
+}
+
+.logoutBtn {
+  margin-top: auto;
+}
+
+.content {
+  width: 80%;
+  padding: 65px 72px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  margin-bottom: 52px;
+  font-size: 32px;
+  color: var(--dark-blue);
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+.order {
+  flex: 1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--dark-blue);
+}
+
+.subtitle {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--light-purple);
+  margin-bottom: 50px;
+}
+
+.orderTable {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.orderTable th {
+  text-align: left;
+  font-size: 14px;
+  color: var(--light-purple);
+}
+
+.orderTable td {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark-blue);
+}
+
+.orderTable tr {
+  transition: all .3s;
+}
+
+.orderTable tr.active, .orderTable tr:hover {
+  border-radius: 8px;
+  box-shadow: 0 8px 19px rgba(223, 223, 253, .6);
+}
+
+.loadMoreBtn {
+  text-decoration: underline;
+  color: var(--light-red);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 82px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.payment span {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark-blue);
+}
+
+.planDetails {
+  padding: 32px;
+  background: var(--red);
+  border-radius: 16px;
+  color: var(--white);
+}
+
+.planDetails h5 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.planDetails h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.planDetails p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.planDetails button {
+  border-radius: 8px;
+  border: 1px solid var(--white);
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
