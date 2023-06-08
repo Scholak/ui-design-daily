@@ -49,7 +49,7 @@ button {
   font-size: 14px;
 }
 
-ul {
+.wrapper ul {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -57,7 +57,7 @@ ul {
   padding: 16px;
 }
 
-ul li a {
+.wrapper ul li a {
   position: relative;
   display: flex;
   align-items: center;
@@ -70,15 +70,15 @@ ul li a {
   transition: all .3s;
 }
 
-ul li:last-child {
+.wrapper ul li:last-child {
   margin-top: auto;
 }
 
-li.active a, li:hover a {
+.wrapper li.active a, .wrapper li:hover a {
   color: var(--dark-blue);
 }
 
-li a:before {
+.wrapper li a:before {
   content: '';
   position: absolute;
   top: 0;
@@ -89,7 +89,7 @@ li a:before {
   transition: all .3s;
 }
 
-li.active a:before, li:hover a:before {
+.wrapper li.active a:before, .wrapper li:hover a:before {
   background: var(--light-red);
 }
 
