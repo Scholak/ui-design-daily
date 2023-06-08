@@ -15,3 +15,13 @@
 .project-description a {
   color: #000;
 }
+
+.component-links li {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.component-links li a {
+  text-decoration: none;
+  color: #1365c4;
+}
