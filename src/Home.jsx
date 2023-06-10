@@ -24,6 +24,9 @@ const Home = () => {
 			<li>
 				<Link to='/pricing-card'>Pricing Card</Link>
 			</li>
+			<li>
+				<Link to='/timeline'>Timeline</Link>
+			</li>
 		</ul>
 	)
 }

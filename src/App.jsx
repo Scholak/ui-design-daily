@@ -8,6 +8,7 @@ const SubscriptionSection = React.lazy(() => import('./components/SubscriptionSe
 const RentACar = React.lazy(() => import('./components/RentACar'))
 const BillingPage = React.lazy(() => import('./components/BillingPage'))
 const PricingCard = React.lazy(() => import('./components/PricingCard'))
+const Timeline = React.lazy(() => import('./components/Timeline'))
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
 					<Route path='/rent-a-car-ui-design-card-search' element={<RentACar />} />
 					<Route path='/billing-page' element={<BillingPage />} />
 					<Route path='/pricing-card' element={<PricingCard />} />
+					<Route path='/timeline' element={<Timeline />} />
 				</Routes>
 			</BrowserRouter>
 		</Suspense>
