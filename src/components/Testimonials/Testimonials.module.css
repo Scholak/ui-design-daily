@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Merriweather:wght@900&display=swap');
+
+:root {
+  --dark-blue: #15152F;
+  --gray: #D4DCEF;
+  --lght-gray: #F5F8FF;
+  --white: #fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--dark-blue);
+  background: var(--lght-gray);
+}
+
+.testimonials h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.slider {
+  position: relative;
+  width: 744px;
+}
+
+.slideArea {
+  overflow: hidden;
+}
+
+.slider .frame {
+  width: 500%;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  transition: all .3s;
+}
+
+.slider .slide {
+  width: 357px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 50px;
+  background: var(--white);
+  border-radius: 25px;
+}
+
+.slide .text {
+  width: 237px;
+  font-weight: medium;
+  font-size: 18px;
+}
+
+.slide .profile {
+  display: flex;
+  gap: 10px;
+  height: 56px;
+}
+
+.slide .profile .profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slide .profile .profileInfo p {
+  font-family: 'Merriweather', serif;
+}
+
+.slide .profile .profileInfo span {
+  font-size: 14px;
+}
+
+.slider .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider .items span {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gray);
+  cursor: pointer;
+}
+
+.slider .items span.active:before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--white);
+}
+
+.slider .navigation svg {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 48px;
+  color: var(--gray);
+}
+
+.slider .navigation svg:first-child {
+  left: -100px;
+}
+
+
+.slider .navigation svg:last-child {
+  right: -100px;
+}

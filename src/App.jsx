@@ -9,6 +9,7 @@ const RentACar = React.lazy(() => import('./components/RentACar'))
 const BillingPage = React.lazy(() => import('./components/BillingPage'))
 const PricingCard = React.lazy(() => import('./components/PricingCard'))
 const Timeline = React.lazy(() => import('./components/Timeline'))
+const Testimonials = React.lazy(() => import('./components/Testimonials'))
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
 					<Route path='/billing-page' element={<BillingPage />} />
 					<Route path='/pricing-card' element={<PricingCard />} />
 					<Route path='/timeline' element={<Timeline />} />
+					<Route path='/testimonials' element={<Testimonials />} />
 				</Routes>
 			</BrowserRouter>
 		</Suspense>

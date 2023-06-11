@@ -27,6 +27,9 @@ const Home = () => {
 			<li>
 				<Link to='/timeline'>Timeline</Link>
 			</li>
+			<li>
+				<Link to='/testimonials'>Testimonials</Link>
+			</li>
 		</ul>
 	)
 }
